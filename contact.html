@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Rim Abulmahasin using the form on this page.">
+  <title>Contact Me | Rim Abulmahasin's Portfolio</title>
+</head>
+<body>
+  <header>
+    <h1>Contact Me</h1>
+    <p>I would love to hear from you. Fields marked with * are required.</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="skills.html">Skills &amp; Education</a></li>
+        <li><a href="projects.html">Projects &amp; Achievements</a></li>
+        <li><a href="media.html">My Media &amp; Interests</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form action="#" method="get" autocomplete="on">
+
+      <fieldset>
+        <legend>Personal Information</legend>
+        <p>
+          <label for="fullname">Full name *</label><br>
+          <input type="text" id="fullname" name="fullname" placeholder="e.g. khalid abdunasir" required minlength="3" maxlength="50" autofocus>
+        </p>
+        <p>
+          <label for="email">Email *</label><br>
+          <input type="email" id="email" name="email" placeholder="khalid abdunasir@gmail.com" required>
+        </p>
+        <p>
+          <label for="phone">Phone (format: 0911223344)</label><br>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" title="Enter exactly 10 digits" placeholder="0911223344">
+        </p>
+        <p>
+          <label for="dob">Date of birth</label><br>
+          <input type="date" id="dob" name="dob" min="1950-01-01" max="2015-12-31">
+        </p>
+        <p>
+          <label for="age">Age (above 18)</label><br>
+          <input type="number" id="age" name="age" min="16" max="100" step="1">
+        </p>
+        <p>
+          <label for="website">Personal website</label><br>
+          <input type="url" id="website" name="website" placeholder="https://example.com">
+        </p>
+        <p>
+          <label for="password">Password (min 8 characters) *</label><br>
+          <input type="password" id="password" name="password" required minlength="8">
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your Message</legend>
+        <p>
+          <label for="subject">Topic *</label><br>
+          <select id="subject" name="subject" required>
+            <option value="">-- Please choose --</option>
+            <optgroup label="General">
+              <option value="question">Question</option>
+              <option value="feedback">Feedback</option>
+            </optgroup>
+            <optgroup label="Work">
+              <option value="collab">Collaboration</option>
+              <option value="job">Job opportunity</option>
+            </optgroup>
+          </select>
+        </p>
+        <p>
+          <label for="country">Country</label><br>
+          <input list="countries" id="country" name="country" placeholder="Start typing...">
+          <datalist id="countries">
+            <option value="Ethiopia">
+            <option value="Kenya">
+            <option value="Uganda">
+            <option value="Tanzania">
+            <option value="Other">
+          </datalist>
+        </p>
+        <p>Preferred contact method *</p>
+        <p>
+          <input type="radio" id="m-email" name="method" value="email" required checked>
+          <label for="m-email">Email</label>
+          <input type="radio" id="m-phone" name="method" value="phone">
+          <label for="m-phone">Phone</label>
+          <input type="radio" id="m-either" name="method" value="either">
+          <label for="m-either">Either</label>
+        </p>
+        <p>
+          <label for="message">Message * (10-500 characters)</label><br>
+          <textarea id="message" name="message" rows="6" cols="50" required minlength="10" maxlength="500" placeholder="Write your message here..."></textarea>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+        <p>I am interested in:</p>
+        <p>
+          <input type="checkbox" id="i-web" name="interest" value="web">
+          <label for="i-web">Web development</label>
+          <input type="checkbox" id="i-music" name="interest" value="music">
+          <label for="i-music">Reading</label>
+          <input type="checkbox" id="i-learn" name="interest" value="learning">
+          <label for="i-learn">Learning together</label>
+        </p>
+        <p>
+          <label for="rating">Rate my website (1-10)</label><br>
+          <input type="range" id="rating" name="rating" min="1" max="10" value="5">
+        </p>
+        <p>
+          <label for="color">Favourite colour</label>
+          <input type="color" id="color" name="color" value="#3366cc">
+        </p>
+        <p>
+          <label for="attachment">Attach a file</label><br>
+          <input type="file" id="attachment" name="attachment" accept=".pdf,.png,.jpg">
+        </p>
+        <input type="hidden" name="source" value="contact-page">
+        <p>
+          <input type="checkbox" id="agree" name="agree" required>
+          <label for="agree">I agree to be contacted about my message *</label>
+        </p>
+      </fieldset>
+
+      <p>
+        <button type="submit">Send Message</button>
+        <button type="reset">Clear Form</button>
+        <a href="index.html">Cancel</a>
+      </p>
+    </form>
+
+    <section>
+      <h2>Other Ways to Reach Me</h2>
+      <address>
+        Email: <a href="mailto:rimabulmahasin@gmail.com">rimabulmahsin@gmail.com</a><br>
+        Phone: <a href="tel:+251911223344">+251 992923320</a><br>
+        Location: Addis Ababa, Ethiopia
+      </address>
+    </section>
+  </main>
+
+  <footer>
+    <hr>
+    <p>&copy; 2026 Rim Abulmahasin. <a href="index.html">Back to Home</a></p>
+  </footer>
+</body>
+</html>
